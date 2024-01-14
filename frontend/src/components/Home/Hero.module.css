@@ -3,10 +3,10 @@
 .heading {
     font-family: futura,"Nunito Sans", sans-serif;
     font-size: 8vh;
-    color: #e4f5e8;
+    color: white;
     padding-left: 30px;
     margin-bottom: 30px; 
-    
+    background-color: rgba(0, 0, 0, 0.5);
     
   }
   
@@ -15,6 +15,7 @@
     padding-bottom: 0;
     line-height: 7vw;
     padding: 0vw 4vw;
+    
     
   }
   .heading h1::selection{

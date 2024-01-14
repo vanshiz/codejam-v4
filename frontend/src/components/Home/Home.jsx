@@ -1,11 +1,16 @@
-import { Navbar } from "./Navbar"
+
 import { Hero } from "./Hero"
+import Info from "./Info"
+
 
  function Home(){
+ 
+
     return(
         <>
-             <Navbar />
+             
              <Hero />
+             <Info />
              
         </>
     )
