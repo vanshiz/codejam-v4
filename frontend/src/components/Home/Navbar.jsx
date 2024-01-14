@@ -1,4 +1,5 @@
 import styles from './Navbar.module.css'
+import { FaUserCircle } from "react-icons/fa";
 export function Navbar() {
   return (
     <div>
@@ -15,6 +16,7 @@ export function Navbar() {
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
+        <li><FaUserCircle style={{ fontSize: '2em' }} /></li>
         <div>
             
         </div>
