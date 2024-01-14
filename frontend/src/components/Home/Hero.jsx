@@ -32,7 +32,7 @@ export function Hero() {
         <h1>RHYTHMIC REALM
         <br/>WHERE VIBES MATCH</h1>
         <button className={styles.herocta}>
-          <FaMusic /> <b>CTA</b>
+          <FaMusic /> <b>LISTEN NOW</b>
         </button>
       </div>
     </>

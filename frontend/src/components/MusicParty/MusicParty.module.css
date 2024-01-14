@@ -1,0 +1,19 @@
+.musicpartycontainer {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .musicpartytitle {
+    color: #333;
+  }
+  
+  .musicpartyinput {
+    margin: 10px 0;
+  }
+  
+  .musicpartyaudioplayer {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+  }
+  
