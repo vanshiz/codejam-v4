@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanuman&family=Noto+Sans+SC:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;800;900&family=Roboto&family=Urbanist&display=swap');
-*{
+
+
+
+  /* https://images.unsplash.com/photo-1501612780327-45045538702b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */
+body{
+    background-image: url('../../assets/coolbg.gif');
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
-  }
-  
-body{
-    background-image: url(https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 }
+
+
 
 .logo{
     height: 50px;
@@ -27,10 +26,10 @@ ul{
     
 }
 li{
-    font-size: 22px;
+    font-size: 19px;
     list-style: none;
     margin-right: 30px;
-    color: beige;
+    color: #e4f5e8;
     text-decoration: underline;
     
 }
