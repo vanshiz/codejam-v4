@@ -29,7 +29,11 @@ li{
     font-size: 19px;
     list-style: none;
     margin-right: 30px;
-    color: #e4f5e8;
+    color: white;
     text-decoration: underline;
     
+}
+.linkel{
+    text-decoration: none;
+color: white;
 }
