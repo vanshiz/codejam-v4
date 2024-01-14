@@ -22,7 +22,7 @@ const io = socketio(server);
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 
-const botName = "RythmRealm Bot";
+const botName = "Rythmic Realm Bot";
 
 (async () => {
   pubClient = createClient({ url: "redis://127.0.0.1:6379" });
@@ -40,7 +40,7 @@ io.on("connection", (socket) => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit("message", formatMessage(botName, "Welcome to RythmRealm!"));
+    socket.emit("message", formatMessage(botName, "Welcome to Rythmic Realm!"));
 
     // Broadcast when a user connects
     socket.broadcast

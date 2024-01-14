@@ -15,7 +15,7 @@
   <body>
     <div class="chat-container">
       <header class="chat-header">
-        <h1 class="heading">Rhythm Realm</h1>
+        <h1 class="heading">Rhythmic Realm</h1>
         <a id="leave-btn" class="btn-chat">Leave Room</a>
       </header>
       <main class="chat-main">
@@ -26,9 +26,19 @@
           <ul id="users"></ul>
         </div>
         <div class="chat-messages"></div>
-        <div class="chat-sidebar">Music Playing:
-          <br><br>
+        <div class="chat-sidebar music-side"><h3>Now Playing: &nbsp;<span class="song-name">Night Changes</span></h3>
+          
           <img src="./asset/oned.jpg" height="370px" width="320px">
+          <br>
+          <section class="music-controls-main">
+            0:00&nbsp;&nbsp;<input type="range" id="progressBar" min="0" max="100" step="1" value="0" onchange="updateProgress()">&nbsp;3:25
+            <div class="music-controls">
+              <button onclick="pauseMusic()" class="btn"><i class="fas fa-pause"></i> Pause</button>
+            <button onclick="playMusic()" class="btn"><i class="fas fa-play"></i> Play</button>
+            <button onclick="stopMusic()" class="btn"><i class="fas fa-stop"></i> Stop</button>
+            </div>
+            
+        </section>
         </div>
       </main>
       <div class="chat-form-container">

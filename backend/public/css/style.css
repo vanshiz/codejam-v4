@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #13fb41;
+	--dark-color-a: #4cf952;
 	--dark-color-b: hsl(120, 6%, 16%);
 	--light-color: #000000;
 	--success-color: #5cb85c;
@@ -109,12 +109,13 @@ a {
 	padding: 30px;
 	max-height: 2000px;
 	overflow-y: scroll;
+	background-color: var(--light-color);
 }
 
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: var(--light-color);
+	background-color: rgba(105, 100, 100, 0.251);
 	border-radius: 5px;
 }
 
@@ -164,7 +165,7 @@ a {
 
 .join-main {
 	padding: 30px 40px;
-	background: var(--dark-color-b);
+	background: var(--light-color);
 }
 
 .join-main p {
@@ -237,4 +238,33 @@ input{
 
 .chat-form-container input{
 	height:30px;
+}
+
+.music-controls{
+	margin:20px auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:5px;
+	
+}
+
+.music-controls-main{
+	padding:20px;
+	font-size:15px;
+
+}
+
+.music-side img{
+	margin:30px auto;
+}
+
+.music-side{
+	overflow-y:hidden;
+}
+
+.music-controls-main input{
+	height:5px;
+	width:70%;
+	margin-bottom:25px;
 }
