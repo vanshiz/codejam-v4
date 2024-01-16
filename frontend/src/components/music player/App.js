@@ -184,10 +184,6 @@ function App() {
       <div className="changeBackBtn" onClick={handleChangeBackground}>
         Change Background
       </div>
-      <a href="https://www.youtube.com/@teenage-programmer" title='Subscribe' className='youtube-Subs'>
-        <img src="./Assets/Images/Youtube_logo.png" alt="Youtube Logo"/>
-        <p>Teenage Programmer</p>
-      </a>
     </div>
     </>
   );
