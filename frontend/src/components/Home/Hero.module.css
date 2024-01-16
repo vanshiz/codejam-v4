@@ -31,6 +31,10 @@
     font-family: "Nunito Sans", sans-serif;
     font-size: 22px;
     cursor: pointer;
+    background-color: #4caf50;
 
+  }
+  .herocta:hover{
+    background-color: #45a049;
   }
   
