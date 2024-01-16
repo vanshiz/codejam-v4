@@ -1,18 +1,22 @@
+import React, { useEffect, useRef } from 'react';
 
-import { Hero } from "./Hero"
-import Info from "./Info"
+import { Hero } from "./Hero";
+import Info from "./Info";
+import Footer from "./Footer";
 
 
- function Home(){
+
+function Home() {
  
 
-    return(
-        <>
-             
-             <Hero />
-             <Info />
-             
-        </>
-    )
+  return (
+    <>
+      <Hero  />
+      <Info />
+     
+      <Footer />
+    </>
+  );
 }
-export default Home
+
+export default Home;
