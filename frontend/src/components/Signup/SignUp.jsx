@@ -1,24 +1,31 @@
-// SignUp.jsx
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import signUpStyles from './SignUp.module.css';
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [isSignup, setIsSignup] = useState(false);
   const [formData, setFormData] = useState({
-    username: '', // Change this to 'username'
+    username: '',
     email: '',
     password: '',
   });
 
-  // Function to handle login
-  const handleLogin = () => {
-    
-    setIsSignup(true);
-  };
+  // Function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  
-  // Function to handle form input changes
+    // Custom validation logic for email
+    const isEmailValid = /^\d{8}@mail.jiit.ac.in$/.test(formData.email);
+
+    if (isEmailValid) {
+      setIsSignup(true);
+      // Redirect to http://localhost:3009/ when isSignup is true
+      window.location.href = 'http://localhost:3009/';
+    } else {
+      alert('You are not eligible');
+    }
+  };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -27,20 +34,6 @@ const SignUp = () => {
     });
   };
 
-  // Function to handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  
-    // Custom validation logic for email
-    const isEmailValid = /^\d{8}@mail.jiit.ac.in$/.test(formData.email);
-  
-    if (isEmailValid) {
-      setIsSignup(true);
-      
-    } else {
-      alert("You are not eligible ")
-    }
-  };
 
   return (
     <div className={signUpStyles.container}>
