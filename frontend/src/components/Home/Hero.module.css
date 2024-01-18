@@ -37,4 +37,6 @@
   .herocta:hover{
     background-color: #45a049;
   }
-  
+  .herocta a{
+    color: black;
+  }
