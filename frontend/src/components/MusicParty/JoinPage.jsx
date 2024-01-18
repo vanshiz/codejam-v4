@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './JoinPage.module.css';
+import { Link } from 'react-router-dom';
 
 const JoinPage = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const JoinPage = () => {
         <h1 className={styles.heading}>Rhythm Realm</h1>
       </header>
       <main className={styles.joinmain}>
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className="form-control">
             <label htmlFor="username">Username</label>
             <input
@@ -55,7 +56,7 @@ const JoinPage = () => {
             </select>
           </div>
           <button type="submit" className={styles.btn}>
-            Join Chat
+            <a href="../../../../../backend/server.js">Join Chat</a>
           </button>
         </form>
       </main>

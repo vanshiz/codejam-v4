@@ -28,7 +28,7 @@ export function Navbar() {
             <li><Link className={styles.linkel} to="/">Home</Link></li>
             <li><Link className={styles.linkel} to="/about">About</Link></li>
             <li><Link className={styles.linkel} to="/signup">Sign Up</Link></li>
-            <li><Link to="/musicparty" className={styles.linkel}><FaMusic />Music Party</Link></li>
+            <li><Link to="http://localhost:3009/" className={styles.linkel}><FaMusic />Music Party</Link></li>
             <li><Link to="/profile" className={styles.linkel}><FaUserCircle style={{ fontSize: '2em' }} /></Link></li>
             <div>
             </div>
