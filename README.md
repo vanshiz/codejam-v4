@@ -17,7 +17,7 @@ Make sure you have the following tools installed on your machine:
 
     ```bash
     npx create-react-app my-react-socket-app
-    cd my-react-socket-app
+    cd frontend
     ```
 
 2. **Install Socket.IO:**
@@ -104,8 +104,8 @@ Make sure you have the following tools installed on your machine:
     npm start
     ```
 
-    Your React app will be accessible at `http://localhost:3000` by default.
+    Your React app will be accessible at `http://localhost:3003` by default.
 
 ## Conclusion
 
-Congratulations! You've successfully set up a basic React and Socket.IO application. Feel free to expand and customize the functionality based on your project requirements.
+Congratulations! You've successfully set up our music application based on React and Socket.IO application. 
