@@ -5,7 +5,8 @@ import Home from './components/Home/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './components/About/About.jsx';
 import Profile from './components/Profile/Profile.jsx';
-import MusicParty from './components/MusicParty/MusicParty.jsx';
+import JoinPage from './components/MusicParty/JoinPage.jsx';
+// import ChatComponent from './components/MusicParty/ChatComponent.jsx'
 import SignUp from './components/Signup/SignUp.jsx';
 
 
@@ -20,8 +21,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/musicparty" element={<MusicParty />} />
-      </Routes>
+        <Route path="/musicparty" element={<JoinPage />} />
+        {/* <Route path="/chat" element={<ChatComponent />} /> */}
+      </Routes> 
     </BrowserRouter>
   );
 }
