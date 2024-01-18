@@ -1,5 +1,6 @@
 // SignUp.jsx
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import signUpStyles from './SignUp.module.css';
 
 const SignUp = () => {
@@ -12,11 +13,11 @@ const SignUp = () => {
 
   // Function to handle login
   const handleLogin = () => {
-    // jab login hojaye toh ye kran
-    //
+    
     setIsSignup(true);
   };
 
+  
   // Function to handle form input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -29,11 +30,16 @@ const SignUp = () => {
   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your sign-up logic here using the formData
-    console.log('Form submitted:', formData);
-    // Optionally, you can call your authentication API here
-    // and update the isSignup state based on the response.
-    // For simplicity, it's not implemented here.
+  
+    // Custom validation logic for email
+    const isEmailValid = /^\d{8}@mail.jiit.ac.in$/.test(formData.email);
+  
+    if (isEmailValid) {
+      setIsSignup(true);
+      
+    } else {
+      alert("You are not eligible ")
+    }
   };
 
   return (
@@ -78,7 +84,7 @@ const SignUp = () => {
             </label>
 
             <button className={signUpStyles.signupbtn} type="submit">Sign Up</button>
-            <button className={signUpStyles.loginbtn} onClick={handleLogin}>Log In</button>
+            {/* <button className={signUpStyles.loginbtn} onClick={handleLogin}>Log In</button> */}
           </form>
         </div>
       )}

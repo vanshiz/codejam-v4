@@ -11,8 +11,6 @@ body{
     
 }
 
-
-
 .logo{
     height: 50px;
     width: 50px;
@@ -35,5 +33,6 @@ li{
 }
 .linkel{
     text-decoration: none;
-color: white;
+    color: white;
 }
+
