@@ -3,6 +3,7 @@ const http = require("http");
 const express = require("express");
 const socketio = require("socket.io");
 const formatMessage = require("./utils/messages");
+const cors = require("cors");
 
 const createAdapter = require("@socket.io/redis-adapter").createAdapter;
 const redis = require("redis");
@@ -21,6 +22,7 @@ const io = socketio(server);
 
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
+app.use(cors());
 
 const botName = "RythmRealm Bot";
 
@@ -33,7 +35,6 @@ const botName = "RythmRealm Bot";
 
 // Run when client connects
 io.on("connection", (socket) => {
-  console.log(io.of("/").adapter);
   socket.on("joinRoom", ({ username, room }) => {
     const user = userJoin(socket.id, username, room);
 
@@ -83,6 +84,6 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3009;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
