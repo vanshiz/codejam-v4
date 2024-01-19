@@ -1,16 +1,6 @@
 ### Rhythmic Realm
 
 We are using socket.io and redis for making the chat applicaton part work.
-
-<img src="./assets/img1.jpeg">
-
-
-<img src="./assets/img2.jpeg">
-<img src="./assets/img3.jpeg">
-<img src="./assets/img4.jpeg">
-
-
-
 ## Features
 
 - Real-time communication using Socket.IO
