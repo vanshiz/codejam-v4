@@ -9,6 +9,9 @@ const username = params.get('username');
 const room = params.get('room');
 const socket = io();
 
+
+
+
 // Join chatroom
 socket.emit('joinRoom', { username, room });
 
