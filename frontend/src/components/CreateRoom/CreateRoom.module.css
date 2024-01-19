@@ -54,7 +54,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background: url(../asset/about2.gif);
+	background: url(../../assets/about2.gif);
 	margin: 20px;
 	
 	height: auto;
@@ -106,7 +106,7 @@ a:hover{
 	overflow-y: hidden;
 	min-height:90vh;
 	width:100vw;
-	background: url(../asset/about4.gif);
+	background: url(../../assets/about4.gif);
 	border: 1px solid black;
 	border-radius: 39px;
 }
@@ -222,7 +222,7 @@ a:hover{
 	height: 52px;
 	
 	flex: 1;
-	background: url(../asset/about3.gif);
+	background: url(../../assets/about3.gif);
 	position: relative;
 	object-fit: contain;
 	color: white;
@@ -244,7 +244,7 @@ a:hover{
 	border: 1px solid black;
 	border-radius: 39px;
 	justify-content: flex-end;
-	background: url(../asset/about3.gif);
+	background: url(../../assets/about3.gif);
 	position: fixed;
 	object-fit: contain;
 	color: white;
@@ -262,17 +262,17 @@ a:hover{
 }
 
 /* Join Page */
-.join-container {
+.joincontainer {
 	max-width: 1200px;
 	width:80%;
 	margin: 80px auto;
 	color: #fff;
-	background: url(../asset/about4.gif);
+	background: url(../../assets/about4.gif);
 	border: solid 1px black;
 	border-radius: 39px;
 }
 
-.join-header {
+.joinheader {
 	
 	font-size: 7vh;
 	text-align: center;
@@ -288,27 +288,27 @@ a:hover{
     text-shadow: 1px 1px 1px black;
 }
 
-.join-main {
+.joinmain {
 	padding: 30px 40px;
 	
 }
 
-.join-main p {
+.joinmain p {
 	margin-bottom: 20px;
 }
 
-.join-main .form-control {
+.joinmain .formcontrol {
 	margin-bottom: 20px;
 }
 
-.join-main label {
+.joinmain label {
 	font-family: futura ;
 	font-size: 3vh;
 	display: block;
 	margin-bottom: 5px;
 }
 
-.join-main input {
+.joinmain input {
 	font-size: 16px;
 	padding: 5px;
 	height: 40px;
@@ -320,7 +320,7 @@ a:hover{
 	
 }
 
-.join-main select {
+.joinmain select {
 	font-size: 16px;
 	padding: 5px;
 	height: 40px;
@@ -333,7 +333,7 @@ a:hover{
 	
 }
 
-.join-main .btn {
+.joinmain .btn {
     margin-top: 20px;
     width: 100%;
     color: white;
@@ -344,7 +344,7 @@ a:hover{
 	text-shadow: 1px 1px 1px black; /* Adding a smooth transition for the zoom effect */
 }
 
-.join-main .btn:hover {
+.joinmain .btn:hover {
     margin-top: 20px;
     width: 100%;
     color: white;
@@ -399,7 +399,4 @@ input{
 
 .chat-form-container input{
 	height:30px;
-}
-#cr{
-	color: white;
 }
